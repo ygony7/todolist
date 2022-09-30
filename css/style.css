@@ -1,0 +1,51 @@
+.hidden {
+    display : none;  
+}
+
+#todoUl {
+    list-style: none;
+}
+
+/* 꾸미기 */
+
+form {
+    text-align: center;
+}
+
+form input[type="text"]:focus {
+    outline: none;
+}
+
+form input[type="submit"],
+form input[type="button"],
+#todoUl li button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+form input[type="submit"]:hover,
+form input[type="button"]:hover {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-weight: bold;
+}
+
+#todoUl li button:hover {
+    background-color: rgba(255,0,0,0.8);
+    color: white;
+    font-weight: bold;
+}
+
+#todoUl li {
+    color: black;
+    margin : 20px 100px;
+}
+
+#todoUl li button {
+    float: right;
+    margin-right: 50px;
+}
+

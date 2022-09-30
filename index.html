@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!--h1-->
+    <form> 
+        <h1 id="title">To do List</h1>
+    </form>
+    <hr>
+    <!--로그인-->
+    <form id="loginForm">
+        <input type="text" id="nameInput" required>
+        <input type="submit" value="로그인">
+    </form>
+    
+    <!--to-do-list 입력-->
+    <form id="todoForm" class="hidden">
+        <h1 id="hello">반갑습니다</h1><br>
+        <input type="text" id="todoInput" placeholder="예) 코딩공부하기">
+        <input type="button" value="저장">
+    </form>
+    
+    <!--to-do-list 출력-->
+    <ul id="todoUl">
+        <!--
+        <li>
+            <input type="checkbox">
+            첫번째
+            <button>X</button>
+        </li>
+        -->
+    </ul>
+
+    <!--자바스크립트(JavaScript)-->
+    <script src="./js/login.js"></script>
+    <script src="./js/todo.js"></script>
+
+</body>
+</html>
