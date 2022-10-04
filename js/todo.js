@@ -1,7 +1,7 @@
 // todo 입력 공간 가져오기
 const todoInput = document.querySelector('#todoForm #todoInput');
 
-//todo button : click 이벤트로 실행
+// todo button : click 이벤트로 실행
 // button에 아이디를 주지않았기 때문에, 노드로 접근하거나
 // querySelector를 이용하여 선택자를 이용하여 접근해서 
 const todoButton = todoInput.nextElementSibling;
@@ -12,7 +12,8 @@ const todoUl = document.querySelector("#todoUl");
 // 버튼에 이벤트리스너 : button 이므로 click이벤트
 todoButton.addEventListener("click", addTodo);
 
-function addTodo() {
+function addTodo(e) {
+    e.preventDefault();     // 새로고침 막기
     console.log("확인");
     // todoInput -value 값을 들고옴
     //const addlist = todoInput.value;

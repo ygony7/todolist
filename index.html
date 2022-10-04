@@ -22,8 +22,8 @@
     <!--to-do-list 입력-->
     <form id="todoForm" class="hidden">
         <h1 id="hello">반갑습니다</h1><br>
-        <input type="text" id="todoInput" placeholder="예) 코딩공부하기">
-        <input type="button" value="저장">
+        <input type="text" id="todoInput" placeholder="예) 코딩공부하기" onkeypress="if(event.keyCode==13) return true">
+        <input type="submit" value="저장">
     </form>
     
     <!--to-do-list 출력-->

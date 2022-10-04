@@ -24,6 +24,7 @@ form input[type="button"],
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
+    cursor: pointer;
 }
 
 form input[type="submit"]:hover,
